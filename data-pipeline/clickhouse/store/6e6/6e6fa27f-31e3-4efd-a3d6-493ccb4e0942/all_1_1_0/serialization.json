@@ -1,0 +1,1 @@
+{"columns":[{"kind":"Default","name":"first_transaction_at","num_defaults":0,"num_rows":11},{"kind":"Default","name":"num_of_transaction","num_defaults":0,"num_rows":11},{"kind":"Default","name":"total_amount","num_defaults":0,"num_rows":11},{"kind":"Default","name":"user_id","num_defaults":0,"num_rows":11}],"version":0}

@@ -1,0 +1,6 @@
+columns format version: 1
+4 columns:
+`id` Int32
+`user_id` Int32
+`transaction_at` DateTime
+`amount` Float32

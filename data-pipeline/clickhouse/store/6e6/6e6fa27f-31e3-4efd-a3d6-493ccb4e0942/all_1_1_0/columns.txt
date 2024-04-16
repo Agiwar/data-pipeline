@@ -1,0 +1,6 @@
+columns format version: 1
+4 columns:
+`user_id` Int64
+`first_transaction_at` DateTime
+`num_of_transaction` UInt64
+`total_amount` Decimal(38, 2)

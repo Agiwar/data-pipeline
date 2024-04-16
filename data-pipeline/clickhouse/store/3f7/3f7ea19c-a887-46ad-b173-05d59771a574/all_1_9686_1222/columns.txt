@@ -1,0 +1,17 @@
+columns format version: 1
+15 columns:
+`id` Int64
+`auth_pay_id` Int64
+`history_type` Int32
+`update_time` DateTime64(6)
+`channel_type` Int32
+`channel` Nullable(String)
+`channel_paytool_code` Nullable(String)
+`channel_display_meta` Nullable(String)
+`channel_display_detail` Nullable(String)
+`use_jko_coin` Int16
+`single_payment_max_amount` Nullable(Decimal(20, 2))
+`currency` String
+`create_time` DateTime64(6)
+`modify_time` Nullable(DateTime64(6))
+`_version` DateTime64(3)

@@ -1,0 +1,2503 @@
+
+
+============================== 2023-08-31 17:18:27.735841 | c7991388-212a-4d7e-aba9-3fb77c67b1e2 ==============================
+[0m17:18:27.735841 [info ] [MainThread]: Running with dbt=1.4.7
+[0m17:18:27.739536 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m17:18:27.740569 [debug] [MainThread]: Tracking: tracking
+[0m17:18:27.761372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9dca30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9dd2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9dca00>]}
+[0m17:18:27.768390 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-xnzopz4l'
+[0m17:18:27.770090 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:18:28.556899 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:18:28.560755 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m17:18:29.084873 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m17:18:29.091120 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m17:18:29.619359 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m17:18:29.629112 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m17:18:31.924834 [info ] [MainThread]:   Installed from version 0.9.0
+[0m17:18:31.925738 [info ] [MainThread]:   Up to date!
+[0m17:18:31.926538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c7991388-212a-4d7e-aba9-3fb77c67b1e2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9df400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9dc9d0>]}
+[0m17:18:31.927329 [info ] [MainThread]: Installing calogica/dbt_date
+[0m17:18:32.947996 [info ] [MainThread]:   Installed from version 0.8.1
+[0m17:18:32.948808 [info ] [MainThread]:   Updated version available: 0.9.1
+[0m17:18:32.949648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c7991388-212a-4d7e-aba9-3fb77c67b1e2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9dd900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9dd9c0>]}
+[0m17:18:32.950355 [info ] [MainThread]: 
+[0m17:18:32.951120 [info ] [MainThread]: Updates available for packages: ['calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m17:18:32.953594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9de830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9dd480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9dd540>]}
+[0m17:18:32.954449 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-08-31 17:19:05.981126 | 5729b8ed-4f90-4789-8610-3e94a0e845c1 ==============================
+[0m17:19:05.981126 [info ] [MainThread]: Running with dbt=1.4.7
+[0m17:19:05.993015 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+[0m17:19:05.996828 [debug] [MainThread]: Tracking: tracking
+[0m17:19:06.037699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb8e0700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb8e0b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb8e0760>]}
+[0m17:19:06.113407 [debug] [MainThread]: checksum: f4f4cdde9b257b3a8e3791263c44f34b0bd0facc33ef1ba84a563bd63785ce73, vars: {}, profile: None, target: None, version: 1.4.7
+[0m17:19:06.153759 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:19:06.156810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb8e0220>]}
+[0m17:19:07.642509 [debug] [MainThread]: 1699: static parser successfully parsed ods_first_purchase.sql
+[0m17:19:07.660223 [debug] [MainThread]: 1699: static parser successfully parsed stg_purchase_agg.sql
+[0m17:19:07.673618 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_purchase_from_raw.sql
+[0m17:19:07.963844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffae9a3b0>]}
+[0m17:19:07.990815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb88ea10>]}
+[0m17:19:07.996124 [info ] [MainThread]: Found 3 models, 39 tests, 0 snapshots, 0 analyses, 560 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m17:19:08.000338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb839780>]}
+[0m17:19:08.011089 [info ] [MainThread]: 
+[0m17:19:08.014506 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:19:08.017833 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_schemas'
+[0m17:19:08.032371 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:19:08.230351 [info ] [ThreadPool]: dbt_clickhouse adapter: ClickHouse server does not support the EXCHANGE TABLES command
+[0m17:19:08.231871 [info ] [ThreadPool]: dbt_clickhouse adapter: This can be caused by an obsolete ClickHouse version or by running ClickHouse on
+[0m17:19:08.239509 [info ] [ThreadPool]: dbt_clickhouse adapter: an operating system that does not support the low level renameat2() system call.
+[0m17:19:08.241309 [info ] [ThreadPool]: dbt_clickhouse adapter: Some DBT materializations will be slower and not atomic as a result.
+[0m17:19:08.252822 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_schemas: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    select name from system.databases
+  ...
+[0m17:19:08.261303 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:08.265228 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_None_public'
+[0m17:19:08.280420 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_None_public)
+[0m17:19:08.291947 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_None_public: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "connection_name": "list_None_public"} */
+select
+      t.name as name,
+      t.database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type,
+      db.engine as db_engine
+    from system.tables as t JOIN system.databases as db on t.database = db.name
+    where schema = 'public'
+  ...
+[0m17:19:08.301794 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:08.304112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffae3e2f0>]}
+[0m17:19:08.305662 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:19:08.307160 [info ] [MainThread]: 
+[0m17:19:08.325662 [debug] [Thread-1 (]: Began running node model.dbt_clickhouse_project.ods_first_purchase
+[0m17:19:08.345650 [info ] [Thread-1 (]: 1 of 43 START sql table model public.ods_first_purchase ........................ [RUN]
+[0m17:19:08.348730 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'model.dbt_clickhouse_project.ods_first_purchase'
+[0m17:19:08.353703 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_clickhouse_project.ods_first_purchase)
+[0m17:19:08.356983 [debug] [Thread-1 (]: Began compiling node model.dbt_clickhouse_project.ods_first_purchase
+[0m17:19:08.363958 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_clickhouse_project.ods_first_purchase"
+[0m17:19:08.370730 [debug] [Thread-1 (]: Timing info for model.dbt_clickhouse_project.ods_first_purchase (compile): 2023-08-31 17:19:08.359084 => 2023-08-31 17:19:08.370635
+[0m17:19:08.371778 [debug] [Thread-1 (]: Began executing node model.dbt_clickhouse_project.ods_first_purchase
+[0m17:19:08.390445 [debug] [Thread-1 (]: Creating new relation ods_first_purchase
+[0m17:19:08.412739 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.ods_first_purchase: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.ods_first_purchase"} */
+
+            
+
+    
+        create table public.ods_first_purchase
+        
+  
+        
+  engine = AggregatingMergeTree()
+        order by (user_id)
+        
+        
+        
+        empty
+    as (
+        
+
+WITH purchase_main AS (
+    SELECT
+        ID,
+        AccountID,
+        TransactionTime,
+        TotalAmount,
+        StoreID,
+        PayType,
+        PurchaseType
+    FROM
+        ods.PurchaseMain
+    WHERE
+        PayType < 4
+        AND PurchaseStatus in (1, 4, 7)
+        AND PurchaseType in (1, 3, 5)
+),
+user_first_purchase AS (
+    SELECT
+        AccountID                     AS user_id,
+        min(ID)                       AS first_purchase_id,
+        min(TransactionTime)          AS first_transaction_at,
+        countState(ID)                AS num_of_transaction,
+        sum(TotalAmount)              AS total_amount,
+        argMinState(StoreID, ID)      AS store_id,
+        argMinState(PayType, ID)      AS pay_type,
+        argMinState(PurchaseType, ID) AS purchase_type
+    FROM
+        purchase_main
+    GROUP BY
+        AccountID
+)
+SELECT
+    user_id,
+    min(first_purchase_id)         AS first_purchase_id,
+    min(first_transaction_at)      AS first_transaction_at,
+    countMerge(num_of_transaction) AS num_of_transaction,
+    sum(total_amount)              AS total_amount,
+    argMinMerge(store_id)          AS store_id,
+ argMinMerge(pay_type)          AS pay_type,
+ argMinMerge(purchase_type)     AS purchase_type
+FROM
+    user_first_purchase
+GROUP BY
+    user_id
+    )
+        ...
+[0m17:19:08.434150 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:19:08.442270 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.ods_first_purchase: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.ods_first_purchase"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:08.447416 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:08.451249 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_clickhouse_project.ods_first_purchase"
+[0m17:19:08.456637 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.ods_first_purchase: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.ods_first_purchase"} */
+
+  
+    
+    
+        
+        insert into public.ods_first_purchase ("user_id", "first_purchase_id", "first_transaction_at", "num_of_transaction", "total_amount", "store_id", "pay_type", "purchase_type")
+  
+
+WITH purchase_main AS (
+    SELECT
+        ID,
+        AccountID,
+        TransactionTime,
+        TotalAmount,
+        StoreID,
+        PayType,
+        PurchaseType
+    FROM
+        ods.PurchaseMain
+    WHERE
+        PayType < 4
+        AND PurchaseStatus in (1, 4, 7)
+        AND PurchaseType in (1, 3, 5)
+),
+user_first_purchase AS (
+    SELECT
+        AccountID                     AS user_id,
+        min(ID)                       AS first_purchase_id,
+        min(TransactionTime)          AS first_transaction_at,
+        countState(ID)                AS num_of_transaction,
+        sum(TotalAmount)              AS total_amount,
+        argMinState(StoreID, ID)      AS store_id,
+        argMinState(PayType, ID)      AS pay_type,
+        argMinState(PurchaseType, ID) AS purchase_type
+    FROM
+        purchase_main
+    GROUP BY
+        AccountID
+)
+SELECT
+    user_id,
+    min(first_purchase_id)         AS first_purchase_id,
+    min(first_transaction_at)      AS first_transaction_at,
+    countMerge(num_of_transaction) AS num_of_transaction,
+    sum(total_amount)              AS total_amount,
+    argMinMerge(store_id)          AS store_id,
+ argMinMerge(pay_type)          AS pay_type,
+ argMinMerge(purchase_type)     AS purchase_type
+FROM
+    user_first_purchase
+GROUP BY
+    user_id
+  ...
+[0m17:19:08.462716 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:08.480804 [debug] [Thread-1 (]: Timing info for model.dbt_clickhouse_project.ods_first_purchase (execute): 2023-08-31 17:19:08.372355 => 2023-08-31 17:19:08.480749
+[0m17:19:08.482004 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffabf84c0>]}
+[0m17:19:08.483001 [info ] [Thread-1 (]: 1 of 43 OK created sql table model public.ods_first_purchase ................... [[32mOK[0m in 0.13s]
+[0m17:19:08.484999 [debug] [Thread-1 (]: Finished running node model.dbt_clickhouse_project.ods_first_purchase
+[0m17:19:08.486121 [debug] [Thread-1 (]: Began running node seed.dbt_clickhouse_project.raw_purchase
+[0m17:19:08.487249 [info ] [Thread-1 (]: 2 of 43 START seed file public.raw_purchase .................................... [RUN]
+[0m17:19:08.488432 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'seed.dbt_clickhouse_project.raw_purchase'
+[0m17:19:08.489103 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_clickhouse_project.raw_purchase)
+[0m17:19:08.489834 [debug] [Thread-1 (]: Began compiling node seed.dbt_clickhouse_project.raw_purchase
+[0m17:19:08.490515 [debug] [Thread-1 (]: Timing info for seed.dbt_clickhouse_project.raw_purchase (compile): 2023-08-31 17:19:08.490464 => 2023-08-31 17:19:08.490468
+[0m17:19:08.491221 [debug] [Thread-1 (]: Began executing node seed.dbt_clickhouse_project.raw_purchase
+[0m17:19:08.521131 [debug] [Thread-1 (]: dbt_clickhouse adapter: On seed.dbt_clickhouse_project.raw_purchase: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "seed.dbt_clickhouse_project.raw_purchase"} */
+
+    create table public.raw_purchase 
+   ("id" Int32,"user_id" Int32,"transaction_at" DateTime,"amount" Float32)
+    
+  engine = MergeTree()
+    
+      order by (tuple())
+    
+  ...
+[0m17:19:08.589383 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.05 seconds
+[0m17:19:08.600390 [debug] [Thread-1 (]: dbt_clickhouse adapter: On seed.dbt_clickhouse_project.raw_purchase: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "seed.dbt_clickhouse_project.raw_purchase"} */
+insert into public.raw_purchase ("id", "user_id", "transaction_at", "amount")
+    
+    format CSV
+    1,101,2023-01-01T12:01:00,99.99
+2,102,2023-01-02T13:02:00,49.99
+3,103,2023-01-03T14:03:00,19.99
+4,104,2023-01-04T15:04:00,29.99
+5,105,2023-01-05T16:05:00,39.99
+6,101,2023-01-06T17:06:00,89.99
+7,102,2023-01-07T18:07:00,79.99
+8,106,2023-01-08T19:08:00,69.99
+9,107,2023-01-09T20:09:00,59.99
+10,108,2023-01-10T21:10:00,109.99
+11,109,2023-01-11T22:11:00,119.99
+12,110,2023-01-12T23:12:00,129.99
+13,103,2023-01-13T01:13:00,139.99
+14,104,2023-01-14T02:14:00,149.99
+15,111,2023-01-15T03:15:00,159.99
+...
+[0m17:19:08.651608 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.05 seconds
+[0m17:19:08.662121 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_clickhouse_project.raw_purchase"
+[0m17:19:08.704330 [debug] [Thread-1 (]: Timing info for seed.dbt_clickhouse_project.raw_purchase (execute): 2023-08-31 17:19:08.491835 => 2023-08-31 17:19:08.704238
+[0m17:19:08.705832 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffabfb790>]}
+[0m17:19:08.706950 [info ] [Thread-1 (]: 2 of 43 OK loaded seed file public.raw_purchase ................................ [[32mINSERT 15[0m in 0.22s]
+[0m17:19:08.707990 [debug] [Thread-1 (]: Finished running node seed.dbt_clickhouse_project.raw_purchase
+[0m17:19:08.709327 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47
+[0m17:19:08.714604 [info ] [Thread-1 (]: 3 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64  [RUN]
+[0m17:19:08.716126 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47'
+[0m17:19:08.721192 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47)
+[0m17:19:08.744609 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47
+[0m17:19:08.787299 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:08.809826 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:08.822082 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47"
+[0m17:19:08.827825 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47 (compile): 2023-08-31 17:19:08.746087 => 2023-08-31 17:19:08.827711
+[0m17:19:08.829862 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47
+[0m17:19:08.851232 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47"
+[0m17:19:08.856399 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_PURCHASE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME64(3)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('STORE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PAY_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PURCHASE_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'FIRST_PURCHASE_ID'
+            and
+            relation_column_type not in ('INT64')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:08.900619 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.04 seconds
+[0m17:19:08.904339 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47 (execute): 2023-08-31 17:19:08.834484 => 2023-08-31 17:19:08.904256
+[0m17:19:08.906428 [info ] [Thread-1 (]: 3 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64  [[32mPASS[0m in 0.19s]
+[0m17:19:08.907566 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_purchase_id__Int64.78ed77bf47
+[0m17:19:08.908753 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92
+[0m17:19:08.911052 [info ] [Thread-1 (]: 4 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_  [RUN]
+[0m17:19:08.912529 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92'
+[0m17:19:08.914035 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92)
+[0m17:19:08.915265 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92
+[0m17:19:08.923879 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:08.945730 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:08.955607 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92"
+[0m17:19:08.959499 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92 (compile): 2023-08-31 17:19:08.916938 => 2023-08-31 17:19:08.959383
+[0m17:19:08.960272 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92
+[0m17:19:08.963602 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92"
+[0m17:19:08.967521 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_PURCHASE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME64(3)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('STORE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PAY_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PURCHASE_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'FIRST_TRANSACTION_AT'
+            and
+            relation_column_type not in ('DATETIME64(3)')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:08.993505 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:19:08.997353 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92 (execute): 2023-08-31 17:19:08.961331 => 2023-08-31 17:19:08.997261
+[0m17:19:08.999644 [info ] [Thread-1 (]: 4 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_  [[32mPASS[0m in 0.09s]
+[0m17:19:09.002383 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_first_transaction_at__DateTime64_3_.6ec117fa92
+[0m17:19:09.004603 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3
+[0m17:19:09.005755 [info ] [Thread-1 (]: 5 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64  [RUN]
+[0m17:19:09.007465 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3'
+[0m17:19:09.008423 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3)
+[0m17:19:09.009452 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3
+[0m17:19:09.017840 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:09.046271 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:19:09.052957 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3"
+[0m17:19:09.056331 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3 (compile): 2023-08-31 17:19:09.011070 => 2023-08-31 17:19:09.056196
+[0m17:19:09.058332 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3
+[0m17:19:09.061970 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3"
+[0m17:19:09.064530 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_PURCHASE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME64(3)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('STORE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PAY_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PURCHASE_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'NUM_OF_TRANSACTION'
+            and
+            relation_column_type not in ('UINT64')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:09.099059 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m17:19:09.101992 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3 (execute): 2023-08-31 17:19:09.059568 => 2023-08-31 17:19:09.101912
+[0m17:19:09.104109 [info ] [Thread-1 (]: 5 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64  [[32mPASS[0m in 0.10s]
+[0m17:19:09.105210 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_num_of_transaction__UInt64.e0a8209cf3
+[0m17:19:09.106312 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f
+[0m17:19:09.107360 [info ] [Thread-1 (]: 6 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32  [RUN]
+[0m17:19:09.109397 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f'
+[0m17:19:09.111133 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f)
+[0m17:19:09.112130 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f
+[0m17:19:09.120049 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:09.129290 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.137145 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f"
+[0m17:19:09.146855 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f (compile): 2023-08-31 17:19:09.113679 => 2023-08-31 17:19:09.146692
+[0m17:19:09.148710 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f
+[0m17:19:09.155073 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f"
+[0m17:19:09.158661 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_PURCHASE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME64(3)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('STORE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PAY_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PURCHASE_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'PAY_TYPE'
+            and
+            relation_column_type not in ('INT32')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:09.191641 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m17:19:09.194617 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f (execute): 2023-08-31 17:19:09.152306 => 2023-08-31 17:19:09.194529
+[0m17:19:09.200131 [info ] [Thread-1 (]: 6 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32  [[32mPASS[0m in 0.09s]
+[0m17:19:09.201087 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_pay_type__Int32.4d1afae63f
+[0m17:19:09.202387 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d
+[0m17:19:09.203693 [info ] [Thread-1 (]: 7 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32  [RUN]
+[0m17:19:09.205268 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d'
+[0m17:19:09.206206 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d)
+[0m17:19:09.207448 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d
+[0m17:19:09.215035 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:09.221913 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.233756 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d"
+[0m17:19:09.246335 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d (compile): 2023-08-31 17:19:09.208573 => 2023-08-31 17:19:09.246153
+[0m17:19:09.247429 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d
+[0m17:19:09.250645 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d"
+[0m17:19:09.253992 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_PURCHASE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME64(3)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('STORE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PAY_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PURCHASE_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'PURCHASE_TYPE'
+            and
+            relation_column_type not in ('INT32')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:09.269826 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.272197 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d (execute): 2023-08-31 17:19:09.248232 => 2023-08-31 17:19:09.272099
+[0m17:19:09.273933 [info ] [Thread-1 (]: 7 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32  [[32mPASS[0m in 0.07s]
+[0m17:19:09.275307 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_purchase_type__Int32.009ef8dc4d
+[0m17:19:09.297480 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9
+[0m17:19:09.299482 [info ] [Thread-1 (]: 8 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64  [RUN]
+[0m17:19:09.301540 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9'
+[0m17:19:09.303127 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9)
+[0m17:19:09.306689 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9
+[0m17:19:09.315425 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:09.321668 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.328135 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9"
+[0m17:19:09.354059 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9 (compile): 2023-08-31 17:19:09.307473 => 2023-08-31 17:19:09.353891
+[0m17:19:09.358416 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9
+[0m17:19:09.362290 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9"
+[0m17:19:09.367387 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_PURCHASE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME64(3)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('STORE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PAY_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PURCHASE_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'STORE_ID'
+            and
+            relation_column_type not in ('INT64')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:09.383773 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.385627 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9 (execute): 2023-08-31 17:19:09.359725 => 2023-08-31 17:19:09.385559
+[0m17:19:09.386607 [info ] [Thread-1 (]: 8 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64  [[32mPASS[0m in 0.09s]
+[0m17:19:09.387482 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_store_id__Int64.ba998508b9
+[0m17:19:09.388271 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22
+[0m17:19:09.388970 [info ] [Thread-1 (]: 9 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_  [RUN]
+[0m17:19:09.389969 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22'
+[0m17:19:09.390586 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22)
+[0m17:19:09.391312 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22
+[0m17:19:09.397897 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:09.403295 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:09.409363 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22"
+[0m17:19:09.411463 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22 (compile): 2023-08-31 17:19:09.391871 => 2023-08-31 17:19:09.411391
+[0m17:19:09.412067 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22
+[0m17:19:09.414567 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22"
+[0m17:19:09.416469 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_PURCHASE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME64(3)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('STORE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PAY_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PURCHASE_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'TOTAL_AMOUNT'
+            and
+            relation_column_type not in ('DECIMAL(38, 2)')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:09.428835 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.430554 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22 (execute): 2023-08-31 17:19:09.412613 => 2023-08-31 17:19:09.430496
+[0m17:19:09.431555 [info ] [Thread-1 (]: 9 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_  [[32mPASS[0m in 0.04s]
+[0m17:19:09.432425 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_total_amount__Decimal_38_2_.154123ea22
+[0m17:19:09.433293 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3
+[0m17:19:09.433920 [info ] [Thread-1 (]: 10 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64  [RUN]
+[0m17:19:09.434854 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3'
+[0m17:19:09.435431 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3)
+[0m17:19:09.436059 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3
+[0m17:19:09.442392 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:09.447440 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:09.452876 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3"
+[0m17:19:09.454889 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3 (compile): 2023-08-31 17:19:09.436629 => 2023-08-31 17:19:09.454827
+[0m17:19:09.455518 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3
+[0m17:19:09.458097 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3"
+[0m17:19:09.459979 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_PURCHASE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME64(3)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        union all
+        
+        select
+            cast('STORE_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PAY_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('PURCHASE_TYPE' as String) as relation_column,
+            cast('INT32' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'USER_ID'
+            and
+            relation_column_type not in ('INT64')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:09.471299 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.472932 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3 (execute): 2023-08-31 17:19:09.456068 => 2023-08-31 17:19:09.472874
+[0m17:19:09.473879 [info ] [Thread-1 (]: 10 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64  [[32mPASS[0m in 0.04s]
+[0m17:19:09.474624 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_ods_first_purchase_user_id__Int64.86686f91d3
+[0m17:19:09.475283 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9
+[0m17:19:09.475888 [info ] [Thread-1 (]: 11 of 43 START test dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8  [RUN]
+[0m17:19:09.476794 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9'
+[0m17:19:09.477322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9)
+[0m17:19:09.477906 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9
+[0m17:19:09.483784 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9"} */
+
+    select name, type from system.columns where table = 'ods_first_purchase'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:09.488873 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:09.490532 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9"
+[0m17:19:09.492550 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9 (compile): 2023-08-31 17:19:09.478476 => 2023-08-31 17:19:09.492449
+[0m17:19:09.493197 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9
+[0m17:19:09.496705 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9"
+[0m17:19:09.498576 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with test_data as (
+
+    select
+        8 as number_actual_columns,
+        8 as value
+
+)
+select *
+from test_data
+where
+    number_actual_columns != value
+      
+    ) dbt_internal_test...
+[0m17:19:09.503818 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:09.505415 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9 (execute): 2023-08-31 17:19:09.493703 => 2023-08-31 17:19:09.505359
+[0m17:19:09.506365 [info ] [Thread-1 (]: 11 of 43 PASS dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8  [[32mPASS[0m in 0.03s]
+[0m17:19:09.507123 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_ods_first_purchase_8.600f6180e9
+[0m17:19:09.507790 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20
+[0m17:19:09.508400 [info ] [Thread-1 (]: 12 of 43 START test not_null_ods_first_purchase_first_purchase_id .............. [RUN]
+[0m17:19:09.509312 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20'
+[0m17:19:09.509888 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20)
+[0m17:19:09.510566 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20
+[0m17:19:09.517105 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20"
+[0m17:19:09.519132 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20 (compile): 2023-08-31 17:19:09.511118 => 2023-08-31 17:19:09.519042
+[0m17:19:09.519792 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20
+[0m17:19:09.522289 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20"
+[0m17:19:09.524202 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select first_purchase_id
+from public.ods_first_purchase
+where first_purchase_id is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:09.529002 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:09.530587 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20 (execute): 2023-08-31 17:19:09.520368 => 2023-08-31 17:19:09.530535
+[0m17:19:09.531509 [info ] [Thread-1 (]: 12 of 43 PASS not_null_ods_first_purchase_first_purchase_id .................... [[32mPASS[0m in 0.02s]
+[0m17:19:09.532244 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_ods_first_purchase_first_purchase_id.1bd165ac20
+[0m17:19:09.532944 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d
+[0m17:19:09.533563 [info ] [Thread-1 (]: 13 of 43 START test not_null_ods_first_purchase_first_transaction_at ........... [RUN]
+[0m17:19:09.534421 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d'
+[0m17:19:09.535250 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d)
+[0m17:19:09.535802 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d
+[0m17:19:09.540057 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d"
+[0m17:19:09.542126 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d (compile): 2023-08-31 17:19:09.536311 => 2023-08-31 17:19:09.542065
+[0m17:19:09.543203 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d
+[0m17:19:09.546592 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d"
+[0m17:19:09.553572 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select first_transaction_at
+from public.ods_first_purchase
+where first_transaction_at is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:09.576001 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:19:09.578318 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d (execute): 2023-08-31 17:19:09.544378 => 2023-08-31 17:19:09.578235
+[0m17:19:09.580671 [info ] [Thread-1 (]: 13 of 43 PASS not_null_ods_first_purchase_first_transaction_at ................. [[32mPASS[0m in 0.05s]
+[0m17:19:09.581777 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_ods_first_purchase_first_transaction_at.dbd7a3fa8d
+[0m17:19:09.582701 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5
+[0m17:19:09.583396 [info ] [Thread-1 (]: 14 of 43 START test not_null_ods_first_purchase_num_of_transaction ............. [RUN]
+[0m17:19:09.584532 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5'
+[0m17:19:09.585311 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5)
+[0m17:19:09.586515 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5
+[0m17:19:09.592025 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5"
+[0m17:19:09.612098 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5 (compile): 2023-08-31 17:19:09.587164 => 2023-08-31 17:19:09.611928
+[0m17:19:09.619233 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5
+[0m17:19:09.627853 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5"
+[0m17:19:09.631946 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select num_of_transaction
+from public.ods_first_purchase
+where num_of_transaction is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:09.639779 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.641921 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5 (execute): 2023-08-31 17:19:09.624217 => 2023-08-31 17:19:09.641757
+[0m17:19:09.644821 [info ] [Thread-1 (]: 14 of 43 PASS not_null_ods_first_purchase_num_of_transaction ................... [[32mPASS[0m in 0.06s]
+[0m17:19:09.648256 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_ods_first_purchase_num_of_transaction.6641aea0a5
+[0m17:19:09.653660 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e
+[0m17:19:09.656143 [info ] [Thread-1 (]: 15 of 43 START test not_null_ods_first_purchase_pay_type ....................... [RUN]
+[0m17:19:09.659202 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e'
+[0m17:19:09.665343 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e)
+[0m17:19:09.667365 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e
+[0m17:19:09.673737 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e"
+[0m17:19:09.677249 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e (compile): 2023-08-31 17:19:09.669061 => 2023-08-31 17:19:09.677147
+[0m17:19:09.678108 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e
+[0m17:19:09.681313 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e"
+[0m17:19:09.685642 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select pay_type
+from public.ods_first_purchase
+where pay_type is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:09.698563 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.701070 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e (execute): 2023-08-31 17:19:09.678870 => 2023-08-31 17:19:09.700999
+[0m17:19:09.704382 [info ] [Thread-1 (]: 15 of 43 PASS not_null_ods_first_purchase_pay_type ............................. [[32mPASS[0m in 0.05s]
+[0m17:19:09.705529 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_ods_first_purchase_pay_type.dcfd0dca7e
+[0m17:19:09.713901 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb
+[0m17:19:09.715165 [info ] [Thread-1 (]: 16 of 43 START test not_null_ods_first_purchase_purchase_type .................. [RUN]
+[0m17:19:09.717648 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb'
+[0m17:19:09.718504 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb)
+[0m17:19:09.719644 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb
+[0m17:19:09.725014 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb"
+[0m17:19:09.728262 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb (compile): 2023-08-31 17:19:09.720422 => 2023-08-31 17:19:09.728163
+[0m17:19:09.729335 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb
+[0m17:19:09.733227 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb"
+[0m17:19:09.736237 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select purchase_type
+from public.ods_first_purchase
+where purchase_type is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:09.758513 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:19:09.761139 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb (execute): 2023-08-31 17:19:09.730861 => 2023-08-31 17:19:09.760954
+[0m17:19:09.762868 [info ] [Thread-1 (]: 16 of 43 PASS not_null_ods_first_purchase_purchase_type ........................ [[32mPASS[0m in 0.05s]
+[0m17:19:09.764384 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_ods_first_purchase_purchase_type.cbbf22d1bb
+[0m17:19:09.765384 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2
+[0m17:19:09.766531 [info ] [Thread-1 (]: 17 of 43 START test not_null_ods_first_purchase_store_id ....................... [RUN]
+[0m17:19:09.768109 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2'
+[0m17:19:09.768805 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2)
+[0m17:19:09.769482 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2
+[0m17:19:09.774406 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2"
+[0m17:19:09.789794 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2 (compile): 2023-08-31 17:19:09.770166 => 2023-08-31 17:19:09.789620
+[0m17:19:09.795316 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2
+[0m17:19:09.808941 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2"
+[0m17:19:09.812937 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select store_id
+from public.ods_first_purchase
+where store_id is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:09.820477 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.823407 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2 (execute): 2023-08-31 17:19:09.804981 => 2023-08-31 17:19:09.823338
+[0m17:19:09.827769 [info ] [Thread-1 (]: 17 of 43 PASS not_null_ods_first_purchase_store_id ............................. [[32mPASS[0m in 0.06s]
+[0m17:19:09.834287 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_ods_first_purchase_store_id.e19b055ea2
+[0m17:19:09.836834 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28
+[0m17:19:09.842111 [info ] [Thread-1 (]: 18 of 43 START test not_null_ods_first_purchase_total_amount ................... [RUN]
+[0m17:19:09.845283 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28'
+[0m17:19:09.848196 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28)
+[0m17:19:09.849486 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28
+[0m17:19:09.854925 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28"
+[0m17:19:09.859542 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28 (compile): 2023-08-31 17:19:09.850418 => 2023-08-31 17:19:09.859462
+[0m17:19:09.860581 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28
+[0m17:19:09.863962 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28"
+[0m17:19:09.867776 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select total_amount
+from public.ods_first_purchase
+where total_amount is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:09.903372 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m17:19:09.907204 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28 (execute): 2023-08-31 17:19:09.861591 => 2023-08-31 17:19:09.907110
+[0m17:19:09.909465 [info ] [Thread-1 (]: 18 of 43 PASS not_null_ods_first_purchase_total_amount ......................... [[32mPASS[0m in 0.06s]
+[0m17:19:09.910834 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_ods_first_purchase_total_amount.75b0c24d28
+[0m17:19:09.911670 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a
+[0m17:19:09.912646 [info ] [Thread-1 (]: 19 of 43 START test not_null_ods_first_purchase_user_id ........................ [RUN]
+[0m17:19:09.913779 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a'
+[0m17:19:09.914478 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a)
+[0m17:19:09.915360 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a
+[0m17:19:09.919651 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a"
+[0m17:19:09.924040 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a (compile): 2023-08-31 17:19:09.915855 => 2023-08-31 17:19:09.923945
+[0m17:19:09.931596 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a
+[0m17:19:09.937768 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a"
+[0m17:19:09.945804 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select user_id
+from public.ods_first_purchase
+where user_id is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:09.953011 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:09.955597 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a (execute): 2023-08-31 17:19:09.933681 => 2023-08-31 17:19:09.955519
+[0m17:19:09.957351 [info ] [Thread-1 (]: 19 of 43 PASS not_null_ods_first_purchase_user_id .............................. [[32mPASS[0m in 0.04s]
+[0m17:19:09.959131 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_ods_first_purchase_user_id.64ea2b6d1a
+[0m17:19:09.960479 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6
+[0m17:19:09.962223 [info ] [Thread-1 (]: 20 of 43 START test unique_ods_first_purchase_first_purchase_id ................ [RUN]
+[0m17:19:09.963416 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6'
+[0m17:19:09.965050 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6)
+[0m17:19:09.966569 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6
+[0m17:19:09.975625 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6"
+[0m17:19:09.982260 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6 (compile): 2023-08-31 17:19:09.968784 => 2023-08-31 17:19:09.982115
+[0m17:19:09.984194 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6
+[0m17:19:09.993203 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6"
+[0m17:19:10.000377 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    first_purchase_id as unique_field,
+    count(*) as n_records
+
+from public.ods_first_purchase
+where first_purchase_id is not null
+group by first_purchase_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:10.015478 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.017735 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6 (execute): 2023-08-31 17:19:09.989103 => 2023-08-31 17:19:10.017663
+[0m17:19:10.019739 [info ] [Thread-1 (]: 20 of 43 PASS unique_ods_first_purchase_first_purchase_id ...................... [[32mPASS[0m in 0.06s]
+[0m17:19:10.021413 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.unique_ods_first_purchase_first_purchase_id.1075a3dde6
+[0m17:19:10.022520 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2
+[0m17:19:10.023111 [info ] [Thread-1 (]: 21 of 43 START test unique_ods_first_purchase_user_id .......................... [RUN]
+[0m17:19:10.025380 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2'
+[0m17:19:10.026043 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2)
+[0m17:19:10.030608 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2
+[0m17:19:10.040293 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2"
+[0m17:19:10.079279 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2 (compile): 2023-08-31 17:19:10.033776 => 2023-08-31 17:19:10.078992
+[0m17:19:10.080917 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2
+[0m17:19:10.091865 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2"
+[0m17:19:10.096606 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    user_id as unique_field,
+    count(*) as n_records
+
+from public.ods_first_purchase
+where user_id is not null
+group by user_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:10.114644 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:19:10.134940 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2 (execute): 2023-08-31 17:19:10.083669 => 2023-08-31 17:19:10.134854
+[0m17:19:10.136771 [info ] [Thread-1 (]: 21 of 43 PASS unique_ods_first_purchase_user_id ................................ [[32mPASS[0m in 0.11s]
+[0m17:19:10.138022 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.unique_ods_first_purchase_user_id.19496b84c2
+[0m17:19:10.140626 [debug] [Thread-1 (]: Began running node model.dbt_clickhouse_project.stg_purchase_from_raw
+[0m17:19:10.141878 [info ] [Thread-1 (]: 22 of 43 START sql table model public.stg_purchase_from_raw .................... [RUN]
+[0m17:19:10.143172 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'model.dbt_clickhouse_project.stg_purchase_from_raw'
+[0m17:19:10.144154 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_clickhouse_project.stg_purchase_from_raw)
+[0m17:19:10.144999 [debug] [Thread-1 (]: Began compiling node model.dbt_clickhouse_project.stg_purchase_from_raw
+[0m17:19:10.149369 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_clickhouse_project.stg_purchase_from_raw"
+[0m17:19:10.156059 [debug] [Thread-1 (]: Timing info for model.dbt_clickhouse_project.stg_purchase_from_raw (compile): 2023-08-31 17:19:10.146075 => 2023-08-31 17:19:10.155929
+[0m17:19:10.157210 [debug] [Thread-1 (]: Began executing node model.dbt_clickhouse_project.stg_purchase_from_raw
+[0m17:19:10.161661 [debug] [Thread-1 (]: Creating new relation stg_purchase_from_raw
+[0m17:19:10.170120 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.stg_purchase_from_raw: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.stg_purchase_from_raw"} */
+
+            
+
+    
+        create table public.stg_purchase_from_raw
+        
+  
+        
+  engine = ReplacingMergeTree()
+        order by (id)
+        
+        
+        
+        empty
+    as (
+        
+
+WITH source AS (
+    SELECT
+        id::UInt32               AS id,
+        user_id::UInt32          AS user_id,
+        transaction_at::DateTime AS transaction_at,
+        amount::Decimal(18, 2)   AS amount
+    FROM
+        public.raw_purchase
+)
+SELECT * FROM source
+    )
+        ...
+[0m17:19:10.199966 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m17:19:10.203912 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.stg_purchase_from_raw: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.stg_purchase_from_raw"} */
+
+    select name, type from system.columns where table = 'stg_purchase_from_raw'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:10.233038 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m17:19:10.235759 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_clickhouse_project.stg_purchase_from_raw"
+[0m17:19:10.242331 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.stg_purchase_from_raw: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.stg_purchase_from_raw"} */
+
+  
+    
+    
+        
+        insert into public.stg_purchase_from_raw ("id", "user_id", "transaction_at", "amount")
+  
+
+WITH source AS (
+    SELECT
+        id::UInt32               AS id,
+        user_id::UInt32          AS user_id,
+        transaction_at::DateTime AS transaction_at,
+        amount::Decimal(18, 2)   AS amount
+    FROM
+        public.raw_purchase
+)
+SELECT * FROM source
+  ...
+[0m17:19:10.312023 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.07 seconds
+[0m17:19:10.315211 [debug] [Thread-1 (]: Timing info for model.dbt_clickhouse_project.stg_purchase_from_raw (execute): 2023-08-31 17:19:10.159037 => 2023-08-31 17:19:10.315143
+[0m17:19:10.316777 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffac33880>]}
+[0m17:19:10.318447 [info ] [Thread-1 (]: 22 of 43 OK created sql table model public.stg_purchase_from_raw ............... [[32mOK[0m in 0.17s]
+[0m17:19:10.320175 [debug] [Thread-1 (]: Finished running node model.dbt_clickhouse_project.stg_purchase_from_raw
+[0m17:19:10.322865 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4
+[0m17:19:10.324266 [info ] [Thread-1 (]: 23 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_  [RUN]
+[0m17:19:10.326565 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4'
+[0m17:19:10.327529 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4)
+[0m17:19:10.328599 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4
+[0m17:19:10.335743 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4"} */
+
+    select name, type from system.columns where table = 'stg_purchase_from_raw'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:10.343198 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.347597 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4"
+[0m17:19:10.371933 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4 (compile): 2023-08-31 17:19:10.329227 => 2023-08-31 17:19:10.371770
+[0m17:19:10.373103 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4
+[0m17:19:10.376870 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4"
+[0m17:19:10.381194 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('ID' as String) as relation_column,
+            cast('UINT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('UINT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME' as String) as relation_column_type
+        union all
+        
+        select
+            cast('AMOUNT' as String) as relation_column,
+            cast('DECIMAL(18, 2)' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'AMOUNT'
+            and
+            relation_column_type not in ('DECIMAL(18, 2)')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:10.390580 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.392880 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4 (execute): 2023-08-31 17:19:10.374281 => 2023-08-31 17:19:10.392820
+[0m17:19:10.393849 [info ] [Thread-1 (]: 23 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_  [[32mPASS[0m in 0.07s]
+[0m17:19:10.394635 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_amount__Decimal_18_2_.516dec5ac4
+[0m17:19:10.395418 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8
+[0m17:19:10.396036 [info ] [Thread-1 (]: 24 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32  [RUN]
+[0m17:19:10.396979 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8'
+[0m17:19:10.397757 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8)
+[0m17:19:10.398486 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8
+[0m17:19:10.404798 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8"} */
+
+    select name, type from system.columns where table = 'stg_purchase_from_raw'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:10.410022 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:10.413707 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8"
+[0m17:19:10.415699 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8 (compile): 2023-08-31 17:19:10.398978 => 2023-08-31 17:19:10.415632
+[0m17:19:10.416346 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8
+[0m17:19:10.419932 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8"
+[0m17:19:10.421915 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('ID' as String) as relation_column,
+            cast('UINT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('UINT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME' as String) as relation_column_type
+        union all
+        
+        select
+            cast('AMOUNT' as String) as relation_column,
+            cast('DECIMAL(18, 2)' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'ID'
+            and
+            relation_column_type not in ('UINT32')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:10.430292 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.432871 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8 (execute): 2023-08-31 17:19:10.416862 => 2023-08-31 17:19:10.432816
+[0m17:19:10.433845 [info ] [Thread-1 (]: 24 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32  [[32mPASS[0m in 0.04s]
+[0m17:19:10.434949 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_id__Uint32.d4291efce8
+[0m17:19:10.435678 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525
+[0m17:19:10.436365 [info ] [Thread-1 (]: 25 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime  [RUN]
+[0m17:19:10.437360 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525'
+[0m17:19:10.437924 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525)
+[0m17:19:10.438520 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525
+[0m17:19:10.444863 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525"} */
+
+    select name, type from system.columns where table = 'stg_purchase_from_raw'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:10.449787 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:10.453493 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525"
+[0m17:19:10.455599 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525 (compile): 2023-08-31 17:19:10.439089 => 2023-08-31 17:19:10.455534
+[0m17:19:10.456212 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525
+[0m17:19:10.458752 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525"
+[0m17:19:10.460855 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('ID' as String) as relation_column,
+            cast('UINT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('UINT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME' as String) as relation_column_type
+        union all
+        
+        select
+            cast('AMOUNT' as String) as relation_column,
+            cast('DECIMAL(18, 2)' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'TRANSACTION_AT'
+            and
+            relation_column_type not in ('DATETIME')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:10.469456 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.471098 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525 (execute): 2023-08-31 17:19:10.456741 => 2023-08-31 17:19:10.471039
+[0m17:19:10.472009 [info ] [Thread-1 (]: 25 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime  [[32mPASS[0m in 0.03s]
+[0m17:19:10.472771 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_transaction_at__DateTime.d55c21c525
+[0m17:19:10.473478 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24
+[0m17:19:10.474114 [info ] [Thread-1 (]: 26 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32  [RUN]
+[0m17:19:10.475069 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24'
+[0m17:19:10.475669 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24)
+[0m17:19:10.476302 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24
+[0m17:19:10.482917 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24"} */
+
+    select name, type from system.columns where table = 'stg_purchase_from_raw'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:10.488137 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:10.492783 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24"
+[0m17:19:10.494752 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24 (compile): 2023-08-31 17:19:10.476935 => 2023-08-31 17:19:10.494686
+[0m17:19:10.495411 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24
+[0m17:19:10.497906 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24"
+[0m17:19:10.499996 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('ID' as String) as relation_column,
+            cast('UINT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('UINT32' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME' as String) as relation_column_type
+        union all
+        
+        select
+            cast('AMOUNT' as String) as relation_column,
+            cast('DECIMAL(18, 2)' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'USER_ID'
+            and
+            relation_column_type not in ('UINT32')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:10.508869 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.510505 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24 (execute): 2023-08-31 17:19:10.495924 => 2023-08-31 17:19:10.510450
+[0m17:19:10.511463 [info ] [Thread-1 (]: 26 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32  [[32mPASS[0m in 0.04s]
+[0m17:19:10.512241 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_from_raw_user_id__Uint32.6210b7dd24
+[0m17:19:10.512921 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78
+[0m17:19:10.513551 [info ] [Thread-1 (]: 27 of 43 START test dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4  [RUN]
+[0m17:19:10.514468 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78'
+[0m17:19:10.515139 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78)
+[0m17:19:10.515779 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78
+[0m17:19:10.521640 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78"} */
+
+    select name, type from system.columns where table = 'stg_purchase_from_raw'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:10.526412 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:10.528056 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78"
+[0m17:19:10.530147 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78 (compile): 2023-08-31 17:19:10.516291 => 2023-08-31 17:19:10.530087
+[0m17:19:10.530920 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78
+[0m17:19:10.533499 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78"
+[0m17:19:10.535479 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with test_data as (
+
+    select
+        4 as number_actual_columns,
+        4 as value
+
+)
+select *
+from test_data
+where
+    number_actual_columns != value
+      
+    ) dbt_internal_test...
+[0m17:19:10.540570 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:10.542110 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78 (execute): 2023-08-31 17:19:10.531478 => 2023-08-31 17:19:10.542055
+[0m17:19:10.543003 [info ] [Thread-1 (]: 27 of 43 PASS dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4  [[32mPASS[0m in 0.03s]
+[0m17:19:10.543732 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_from_raw_4.001fe1cb78
+[0m17:19:10.544406 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976
+[0m17:19:10.544988 [info ] [Thread-1 (]: 28 of 43 START test not_null_stg_purchase_from_raw_amount ...................... [RUN]
+[0m17:19:10.545884 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976'
+[0m17:19:10.546627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976)
+[0m17:19:10.547164 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976
+[0m17:19:10.552507 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976"
+[0m17:19:10.558564 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976 (compile): 2023-08-31 17:19:10.547635 => 2023-08-31 17:19:10.558313
+[0m17:19:10.560099 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976
+[0m17:19:10.566126 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976"
+[0m17:19:10.579739 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select amount
+from public.stg_purchase_from_raw
+where amount is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:10.586726 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.589284 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976 (execute): 2023-08-31 17:19:10.561892 => 2023-08-31 17:19:10.589211
+[0m17:19:10.590396 [info ] [Thread-1 (]: 28 of 43 PASS not_null_stg_purchase_from_raw_amount ............................ [[32mPASS[0m in 0.04s]
+[0m17:19:10.613256 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_amount.302c8e7976
+[0m17:19:10.614213 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677
+[0m17:19:10.615096 [info ] [Thread-1 (]: 29 of 43 START test not_null_stg_purchase_from_raw_id .......................... [RUN]
+[0m17:19:10.616200 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677'
+[0m17:19:10.616887 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677)
+[0m17:19:10.617628 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677
+[0m17:19:10.623305 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677"
+[0m17:19:10.626111 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677 (compile): 2023-08-31 17:19:10.618233 => 2023-08-31 17:19:10.626028
+[0m17:19:10.627130 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677
+[0m17:19:10.630266 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677"
+[0m17:19:10.644668 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from public.stg_purchase_from_raw
+where id is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:10.656021 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.658171 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677 (execute): 2023-08-31 17:19:10.627804 => 2023-08-31 17:19:10.658089
+[0m17:19:10.659666 [info ] [Thread-1 (]: 29 of 43 PASS not_null_stg_purchase_from_raw_id ................................ [[32mPASS[0m in 0.04s]
+[0m17:19:10.660622 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_id.d2b8d19677
+[0m17:19:10.661982 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae
+[0m17:19:10.663321 [info ] [Thread-1 (]: 30 of 43 START test not_null_stg_purchase_from_raw_transaction_at .............. [RUN]
+[0m17:19:10.664697 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae'
+[0m17:19:10.665360 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae)
+[0m17:19:10.666084 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae
+[0m17:19:10.670679 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae"
+[0m17:19:10.673752 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae (compile): 2023-08-31 17:19:10.666834 => 2023-08-31 17:19:10.673678
+[0m17:19:10.674973 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae
+[0m17:19:10.677901 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae"
+[0m17:19:10.695533 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select transaction_at
+from public.stg_purchase_from_raw
+where transaction_at is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:10.709304 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.712166 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae (execute): 2023-08-31 17:19:10.675690 => 2023-08-31 17:19:10.712094
+[0m17:19:10.713677 [info ] [Thread-1 (]: 30 of 43 PASS not_null_stg_purchase_from_raw_transaction_at .................... [[32mPASS[0m in 0.05s]
+[0m17:19:10.715629 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_transaction_at.d46d5394ae
+[0m17:19:10.716913 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226
+[0m17:19:10.717755 [info ] [Thread-1 (]: 31 of 43 START test not_null_stg_purchase_from_raw_user_id ..................... [RUN]
+[0m17:19:10.719046 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226'
+[0m17:19:10.719709 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226)
+[0m17:19:10.720554 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226
+[0m17:19:10.726482 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226"
+[0m17:19:10.733756 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226 (compile): 2023-08-31 17:19:10.721313 => 2023-08-31 17:19:10.733603
+[0m17:19:10.736593 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226
+[0m17:19:10.766257 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226"
+[0m17:19:10.774111 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select user_id
+from public.stg_purchase_from_raw
+where user_id is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:10.781953 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.784342 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226 (execute): 2023-08-31 17:19:10.762269 => 2023-08-31 17:19:10.784270
+[0m17:19:10.786536 [info ] [Thread-1 (]: 31 of 43 PASS not_null_stg_purchase_from_raw_user_id ........................... [[32mPASS[0m in 0.07s]
+[0m17:19:10.787828 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_stg_purchase_from_raw_user_id.dbe135d226
+[0m17:19:10.788939 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f
+[0m17:19:10.790026 [info ] [Thread-1 (]: 32 of 43 START test unique_stg_purchase_from_raw_id ............................ [RUN]
+[0m17:19:10.791519 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f'
+[0m17:19:10.792322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f)
+[0m17:19:10.812262 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f
+[0m17:19:10.818676 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f"
+[0m17:19:10.825144 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f (compile): 2023-08-31 17:19:10.813747 => 2023-08-31 17:19:10.825004
+[0m17:19:10.826495 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f
+[0m17:19:10.829961 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f"
+[0m17:19:10.833234 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from public.stg_purchase_from_raw
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:10.850528 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:19:10.853517 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f (execute): 2023-08-31 17:19:10.827520 => 2023-08-31 17:19:10.853435
+[0m17:19:10.855091 [info ] [Thread-1 (]: 32 of 43 PASS unique_stg_purchase_from_raw_id .................................. [[32mPASS[0m in 0.06s]
+[0m17:19:10.869919 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.unique_stg_purchase_from_raw_id.a6e8b4be0f
+[0m17:19:10.871551 [debug] [Thread-1 (]: Began running node model.dbt_clickhouse_project.stg_purchase_agg
+[0m17:19:10.872922 [info ] [Thread-1 (]: 33 of 43 START sql table model public.stg_purchase_agg ......................... [RUN]
+[0m17:19:10.875010 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'model.dbt_clickhouse_project.stg_purchase_agg'
+[0m17:19:10.875743 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_clickhouse_project.stg_purchase_agg)
+[0m17:19:10.876670 [debug] [Thread-1 (]: Began compiling node model.dbt_clickhouse_project.stg_purchase_agg
+[0m17:19:10.881233 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_clickhouse_project.stg_purchase_agg"
+[0m17:19:10.884855 [debug] [Thread-1 (]: Timing info for model.dbt_clickhouse_project.stg_purchase_agg (compile): 2023-08-31 17:19:10.877968 => 2023-08-31 17:19:10.884750
+[0m17:19:10.885635 [debug] [Thread-1 (]: Began executing node model.dbt_clickhouse_project.stg_purchase_agg
+[0m17:19:10.888993 [debug] [Thread-1 (]: Creating new relation stg_purchase_agg
+[0m17:19:10.891339 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.stg_purchase_agg: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.stg_purchase_agg"} */
+
+            
+
+    
+        create table public.stg_purchase_agg
+        
+  
+        
+  engine = AggregatingMergeTree()
+        order by (user_id)
+        
+        
+        
+        empty
+    as (
+        
+
+WITH purchase AS (
+    SELECT
+        id,
+        user_id,
+        transaction_at,
+        amount
+    FROM
+        public.stg_purchase_from_raw
+),
+purchase_agg AS (
+    SELECT
+        user_id,
+        min(transaction_at) AS first_transaction_at,
+        countState(id)      AS num_of_transaction,
+        sum(amount)         AS total_amount
+    FROM
+        purchase
+    GROUP BY
+        user_id
+)
+SELECT
+    user_id::Int64                         AS user_id,
+    min(first_transaction_at)::DateTime    AS first_transaction_at,
+    countMerge(num_of_transaction)::UInt64 AS num_of_transaction,
+    sum(total_amount)::Decimal(38, 2)      AS total_amount
+FROM
+    purchase_agg
+GROUP BY
+    user_id
+    )
+        ...
+[0m17:19:10.953129 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.06 seconds
+[0m17:19:10.957153 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.stg_purchase_agg: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.stg_purchase_agg"} */
+
+    select name, type from system.columns where table = 'stg_purchase_agg'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:10.964352 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:10.967415 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_clickhouse_project.stg_purchase_agg"
+[0m17:19:10.971093 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.dbt_clickhouse_project.stg_purchase_agg: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "model.dbt_clickhouse_project.stg_purchase_agg"} */
+
+  
+    
+    
+        
+        insert into public.stg_purchase_agg ("user_id", "first_transaction_at", "num_of_transaction", "total_amount")
+  
+
+WITH purchase AS (
+    SELECT
+        id,
+        user_id,
+        transaction_at,
+        amount
+    FROM
+        public.stg_purchase_from_raw
+),
+purchase_agg AS (
+    SELECT
+        user_id,
+        min(transaction_at) AS first_transaction_at,
+        countState(id)      AS num_of_transaction,
+        sum(amount)         AS total_amount
+    FROM
+        purchase
+    GROUP BY
+        user_id
+)
+SELECT
+    user_id::Int64                         AS user_id,
+    min(first_transaction_at)::DateTime    AS first_transaction_at,
+    countMerge(num_of_transaction)::UInt64 AS num_of_transaction,
+    sum(total_amount)::Decimal(38, 2)      AS total_amount
+FROM
+    purchase_agg
+GROUP BY
+    user_id
+  ...
+[0m17:19:11.054698 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.06 seconds
+[0m17:19:11.058177 [debug] [Thread-1 (]: Timing info for model.dbt_clickhouse_project.stg_purchase_agg (execute): 2023-08-31 17:19:10.886416 => 2023-08-31 17:19:11.058112
+[0m17:19:11.059638 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5729b8ed-4f90-4789-8610-3e94a0e845c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffff882c220>]}
+[0m17:19:11.060963 [info ] [Thread-1 (]: 33 of 43 OK created sql table model public.stg_purchase_agg .................... [[32mOK[0m in 0.18s]
+[0m17:19:11.081102 [debug] [Thread-1 (]: Finished running node model.dbt_clickhouse_project.stg_purchase_agg
+[0m17:19:11.084934 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a
+[0m17:19:11.086132 [info ] [Thread-1 (]: 34 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime  [RUN]
+[0m17:19:11.087946 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a'
+[0m17:19:11.091017 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a)
+[0m17:19:11.092384 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a
+[0m17:19:11.101758 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a"} */
+
+    select name, type from system.columns where table = 'stg_purchase_agg'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:11.108887 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:11.114441 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a"
+[0m17:19:11.118108 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a (compile): 2023-08-31 17:19:11.094527 => 2023-08-31 17:19:11.117997
+[0m17:19:11.121752 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a
+[0m17:19:11.125683 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a"
+[0m17:19:11.144001 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'FIRST_TRANSACTION_AT'
+            and
+            relation_column_type not in ('DATETIME')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:11.156287 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:11.158768 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a (execute): 2023-08-31 17:19:11.123243 => 2023-08-31 17:19:11.158684
+[0m17:19:11.160234 [info ] [Thread-1 (]: 34 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime  [[32mPASS[0m in 0.07s]
+[0m17:19:11.161297 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_first_transaction_at__DateTime.7e50a9a52a
+[0m17:19:11.162908 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7
+[0m17:19:11.164999 [info ] [Thread-1 (]: 35 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64  [RUN]
+[0m17:19:11.169125 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7'
+[0m17:19:11.176684 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7)
+[0m17:19:11.178232 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7
+[0m17:19:11.196679 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7"} */
+
+    select name, type from system.columns where table = 'stg_purchase_agg'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:11.202789 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:11.207302 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7"
+[0m17:19:11.211538 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7 (compile): 2023-08-31 17:19:11.189895 => 2023-08-31 17:19:11.211441
+[0m17:19:11.214605 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7
+[0m17:19:11.219170 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7"
+[0m17:19:11.225528 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'NUM_OF_TRANSACTION'
+            and
+            relation_column_type not in ('UINT64')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:11.244924 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:11.247262 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7 (execute): 2023-08-31 17:19:11.216678 => 2023-08-31 17:19:11.247172
+[0m17:19:11.249450 [info ] [Thread-1 (]: 35 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64  [[32mPASS[0m in 0.08s]
+[0m17:19:11.251021 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_num_of_transaction__UInt64.4cc614d5b7
+[0m17:19:11.253911 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40
+[0m17:19:11.262717 [info ] [Thread-1 (]: 36 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_  [RUN]
+[0m17:19:11.264935 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40'
+[0m17:19:11.278303 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40)
+[0m17:19:11.279247 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40
+[0m17:19:11.290572 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40"} */
+
+    select name, type from system.columns where table = 'stg_purchase_agg'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:11.297942 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:11.303138 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40"
+[0m17:19:11.320197 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40 (compile): 2023-08-31 17:19:11.283197 => 2023-08-31 17:19:11.320016
+[0m17:19:11.323247 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40
+[0m17:19:11.327125 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40"
+[0m17:19:11.334411 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'TOTAL_AMOUNT'
+            and
+            relation_column_type not in ('DECIMAL(38, 2)')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:11.347464 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:11.350027 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40 (execute): 2023-08-31 17:19:11.324507 => 2023-08-31 17:19:11.349943
+[0m17:19:11.351632 [info ] [Thread-1 (]: 36 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_  [[32mPASS[0m in 0.09s]
+[0m17:19:11.352503 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_total_amount__Decimal_38_2_.6d8d64ee40
+[0m17:19:11.353529 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7
+[0m17:19:11.355625 [info ] [Thread-1 (]: 37 of 43 START test dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64  [RUN]
+[0m17:19:11.359128 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7'
+[0m17:19:11.362778 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7)
+[0m17:19:11.368399 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7
+[0m17:19:11.383699 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7"} */
+
+    select name, type from system.columns where table = 'stg_purchase_agg'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:11.391197 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:11.396385 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7"
+[0m17:19:11.399614 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7 (compile): 2023-08-31 17:19:11.376567 => 2023-08-31 17:19:11.399375
+[0m17:19:11.400460 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7
+[0m17:19:11.404570 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7"
+[0m17:19:11.427994 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with relation_columns as (
+
+        
+        select
+            cast('USER_ID' as String) as relation_column,
+            cast('INT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('FIRST_TRANSACTION_AT' as String) as relation_column,
+            cast('DATETIME' as String) as relation_column_type
+        union all
+        
+        select
+            cast('NUM_OF_TRANSACTION' as String) as relation_column,
+            cast('UINT64' as String) as relation_column_type
+        union all
+        
+        select
+            cast('TOTAL_AMOUNT' as String) as relation_column,
+            cast('DECIMAL(38, 2)' as String) as relation_column_type
+        
+        
+    ),
+    test_data as (
+
+        select
+            *
+        from
+            relation_columns
+        where
+            relation_column = 'USER_ID'
+            and
+            relation_column_type not in ('INT64')
+
+    )
+    select *
+    from test_data
+      
+    ) dbt_internal_test...
+[0m17:19:11.442569 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:19:11.444529 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7 (execute): 2023-08-31 17:19:11.401217 => 2023-08-31 17:19:11.444463
+[0m17:19:11.445595 [info ] [Thread-1 (]: 37 of 43 PASS dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64  [[32mPASS[0m in 0.09s]
+[0m17:19:11.446359 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_column_values_to_be_of_type_stg_purchase_agg_user_id__Int64.b220e4b4e7
+[0m17:19:11.447045 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041
+[0m17:19:11.447730 [info ] [Thread-1 (]: 38 of 43 START test dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4  [RUN]
+[0m17:19:11.448684 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041'
+[0m17:19:11.449272 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041)
+[0m17:19:11.449883 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041
+[0m17:19:11.455775 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041"} */
+
+    select name, type from system.columns where table = 'stg_purchase_agg'
+    
+      and database = 'public'
+    
+    order by position
+  ...
+[0m17:19:11.460729 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:11.462385 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041"
+[0m17:19:11.464276 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041 (compile): 2023-08-31 17:19:11.450462 => 2023-08-31 17:19:11.464215
+[0m17:19:11.464863 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041
+[0m17:19:11.467588 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041"
+[0m17:19:11.469540 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      with test_data as (
+
+    select
+        4 as number_actual_columns,
+        4 as value
+
+)
+select *
+from test_data
+where
+    number_actual_columns != value
+      
+    ) dbt_internal_test...
+[0m17:19:11.474806 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:11.476354 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041 (execute): 2023-08-31 17:19:11.465547 => 2023-08-31 17:19:11.476299
+[0m17:19:11.477242 [info ] [Thread-1 (]: 38 of 43 PASS dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4  [[32mPASS[0m in 0.03s]
+[0m17:19:11.478107 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.dbt_expectations_expect_table_column_count_to_equal_stg_purchase_agg_4.4c5057d041
+[0m17:19:11.478855 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5
+[0m17:19:11.479466 [info ] [Thread-1 (]: 39 of 43 START test not_null_stg_purchase_agg_first_transaction_at ............. [RUN]
+[0m17:19:11.480377 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5'
+[0m17:19:11.480906 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5)
+[0m17:19:11.481455 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5
+[0m17:19:11.485677 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5"
+[0m17:19:11.487722 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5 (compile): 2023-08-31 17:19:11.481946 => 2023-08-31 17:19:11.487652
+[0m17:19:11.488369 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5
+[0m17:19:11.490896 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5"
+[0m17:19:11.492708 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select first_transaction_at
+from public.stg_purchase_agg
+where first_transaction_at is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:11.497542 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:11.499119 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5 (execute): 2023-08-31 17:19:11.488901 => 2023-08-31 17:19:11.499063
+[0m17:19:11.500011 [info ] [Thread-1 (]: 39 of 43 PASS not_null_stg_purchase_agg_first_transaction_at ................... [[32mPASS[0m in 0.02s]
+[0m17:19:11.500969 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_stg_purchase_agg_first_transaction_at.f35a462dd5
+[0m17:19:11.501609 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39
+[0m17:19:11.502219 [info ] [Thread-1 (]: 40 of 43 START test not_null_stg_purchase_agg_num_of_transaction ............... [RUN]
+[0m17:19:11.503100 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39'
+[0m17:19:11.503667 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39)
+[0m17:19:11.504290 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39
+[0m17:19:11.509487 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39"
+[0m17:19:11.511307 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39 (compile): 2023-08-31 17:19:11.504759 => 2023-08-31 17:19:11.511246
+[0m17:19:11.511883 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39
+[0m17:19:11.514334 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39"
+[0m17:19:11.516198 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select num_of_transaction
+from public.stg_purchase_agg
+where num_of_transaction is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:11.521212 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:11.522756 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39 (execute): 2023-08-31 17:19:11.512380 => 2023-08-31 17:19:11.522704
+[0m17:19:11.523635 [info ] [Thread-1 (]: 40 of 43 PASS not_null_stg_purchase_agg_num_of_transaction ..................... [[32mPASS[0m in 0.02s]
+[0m17:19:11.524335 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_stg_purchase_agg_num_of_transaction.01ae290c39
+[0m17:19:11.524948 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120
+[0m17:19:11.525511 [info ] [Thread-1 (]: 41 of 43 START test not_null_stg_purchase_agg_total_amount ..................... [RUN]
+[0m17:19:11.526364 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120'
+[0m17:19:11.526852 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120)
+[0m17:19:11.527413 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120
+[0m17:19:11.531471 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120"
+[0m17:19:11.533348 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120 (compile): 2023-08-31 17:19:11.527870 => 2023-08-31 17:19:11.533295
+[0m17:19:11.533906 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120
+[0m17:19:11.536616 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120"
+[0m17:19:11.538447 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select total_amount
+from public.stg_purchase_agg
+where total_amount is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:11.543333 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:11.544856 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120 (execute): 2023-08-31 17:19:11.534609 => 2023-08-31 17:19:11.544809
+[0m17:19:11.545711 [info ] [Thread-1 (]: 41 of 43 PASS not_null_stg_purchase_agg_total_amount ........................... [[32mPASS[0m in 0.02s]
+[0m17:19:11.546402 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_stg_purchase_agg_total_amount.b97d45c120
+[0m17:19:11.547029 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad
+[0m17:19:11.547604 [info ] [Thread-1 (]: 42 of 43 START test not_null_stg_purchase_agg_user_id .......................... [RUN]
+[0m17:19:11.548482 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad'
+[0m17:19:11.549076 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad)
+[0m17:19:11.549698 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad
+[0m17:19:11.553935 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad"
+[0m17:19:11.556076 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad (compile): 2023-08-31 17:19:11.550268 => 2023-08-31 17:19:11.555994
+[0m17:19:11.556830 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad
+[0m17:19:11.559411 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad"
+[0m17:19:11.561389 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select user_id
+from public.stg_purchase_agg
+where user_id is null
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:11.566822 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:19:11.568902 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad (execute): 2023-08-31 17:19:11.557398 => 2023-08-31 17:19:11.568811
+[0m17:19:11.569960 [info ] [Thread-1 (]: 42 of 43 PASS not_null_stg_purchase_agg_user_id ................................ [[32mPASS[0m in 0.02s]
+[0m17:19:11.570846 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.not_null_stg_purchase_agg_user_id.0bd764c6ad
+[0m17:19:11.571734 [debug] [Thread-1 (]: Began running node test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232
+[0m17:19:11.572643 [info ] [Thread-1 (]: 43 of 43 START test unique_stg_purchase_agg_user_id ............................ [RUN]
+[0m17:19:11.575105 [debug] [Thread-1 (]: Acquiring new clickhouse connection 'test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232'
+[0m17:19:11.576035 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232)
+[0m17:19:11.576799 [debug] [Thread-1 (]: Began compiling node test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232
+[0m17:19:11.583152 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232"
+[0m17:19:11.586302 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232 (compile): 2023-08-31 17:19:11.577398 => 2023-08-31 17:19:11.586198
+[0m17:19:11.587052 [debug] [Thread-1 (]: Began executing node test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232
+[0m17:19:11.589954 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232"
+[0m17:19:11.600281 [debug] [Thread-1 (]: dbt_clickhouse adapter: On test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232: /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "dbt_clickhouse_profile", "target_name": "dev", "node_id": "test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    user_id as unique_field,
+    count(*) as n_records
+
+from public.stg_purchase_agg
+where user_id is not null
+group by user_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test...
+[0m17:19:11.623210 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:19:11.625565 [debug] [Thread-1 (]: Timing info for test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232 (execute): 2023-08-31 17:19:11.587592 => 2023-08-31 17:19:11.625459
+[0m17:19:11.626846 [info ] [Thread-1 (]: 43 of 43 PASS unique_stg_purchase_agg_user_id .................................. [[32mPASS[0m in 0.05s]
+[0m17:19:11.628114 [debug] [Thread-1 (]: Finished running node test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232
+[0m17:19:11.631250 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:19:11.632314 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:19:11.633605 [debug] [MainThread]: Connection 'test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232' was left open.
+[0m17:19:11.634721 [debug] [MainThread]: On test.dbt_clickhouse_project.unique_stg_purchase_agg_user_id.0ae57ba232: Close
+[0m17:19:11.635896 [info ] [MainThread]: 
+[0m17:19:11.638019 [info ] [MainThread]: Finished running 3 table models, 1 seed, 39 tests in 0 hours 0 minutes and 3.62 seconds (3.62s).
+[0m17:19:11.640808 [debug] [MainThread]: Command end result
+[0m17:19:11.676150 [info ] [MainThread]: 
+[0m17:19:11.678538 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:19:11.679930 [info ] [MainThread]: 
+[0m17:19:11.680878 [info ] [MainThread]: Done. PASS=43 WARN=0 ERROR=0 SKIP=0 TOTAL=43
+[0m17:19:11.682163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb8e01c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffae61de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffae61cf0>]}
+[0m17:19:11.683397 [debug] [MainThread]: Flushing usage events

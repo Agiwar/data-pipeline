@@ -1,0 +1,6 @@
+columns format version: 1
+4 columns:
+`id` UInt32
+`user_id` UInt32
+`transaction_at` DateTime
+`amount` Decimal(18, 2)
